@@ -1,0 +1,1 @@
+python main.py --batchsize=64 --steps=15000 --source1_dir="./datasets/CPSC/" --source2_dir="./datasets/CPSC_E/" --source3_dir="./datasets/Georgia/" --target_dir="./datasets/PTB-XL_10k/" --log_dir="./log/CCEG_P/" --lr=3e-4 --cuda=True --test_interval=50 --norm=True
