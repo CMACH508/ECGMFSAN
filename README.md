@@ -2,6 +2,8 @@
 
 It is challenging to build a machine learning model for   automatic   arrhythmia   diagnosis   from   Electrocardiograph(ECG)  signals,  because  the  variation  in  ECG  signals  is  big between different patients or over time, and the available training datasets usually contain limited, unbalanced number of data for multiple  disease  types.  Most  existing  methods  relied  on  labeled data  from  a  single  dataset,  and  the  performance  is  poor  when generalizing  to  unseen  heart  disease  types,  limited  labels,  or distribution  shifts.  In  this  paper,  we  propose  a  multi-source unsupervised domain adaption (MUDA) neural network for ECG classification, to make effective use of data of multiple sources and improve the model’s generalization ability. Our model is featured by   a   two-branch   domain   adaption   and   a   sample-imbalance aware  mixing  strategy  to  fuse  the  information  across  domains. Specifically,  one  branch  is  devised  to  learn  domain-invariant representation,   while   the   other   is   to   extract   domain-specific features. The two branches align the ECG in the target domain to individual source domain in an exclusive and complementary manner, leading to enhanced discriminative features for domain-invariant/specific classifiers. The final prediction, which is a linear combination of the domain classification decisions, is very robust and accurate, by making use of the prior distribution of sample size across domains to place confidence scores over each classifier. Experiments on five ECG datasets indicate superior performance of  our  method  over  the  existing  ones.
 
+![image-20211230212140498](./1.png)
+
 ## Requirements
 
 * python 3.7 or higher
@@ -45,9 +47,9 @@ Some of the available arguments are:
 | norm          | use normalization                   | true            | boolean |
 ## Pretrained model
  We also provide pretrained model,you can download it by the following links:
- 
+
  * google drive:https://drive.google.com/folderview?id=15SvIdxaXJ53iG9KCQ2aBTGySXqKwCm0Q
- 
+
  * baiduyun:https://pan.baidu.com/s/1glgpExn41uo3XX_dpDN1KQ ( verification code：4086)
  Notice please put these pretrained models in the 'SavedModels' folder.
 ## Quick validation
